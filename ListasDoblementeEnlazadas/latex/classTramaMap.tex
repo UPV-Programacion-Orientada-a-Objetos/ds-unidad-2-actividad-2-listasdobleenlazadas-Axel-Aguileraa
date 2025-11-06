@@ -1,0 +1,89 @@
+\doxysection{Trama\+Map Class Reference}
+\hypertarget{classTramaMap}{}\label{classTramaMap}\index{TramaMap@{TramaMap}}
+
+
+Trama concreta que representa una instrucción de mapeo (ej. "{}\+M,5"{}).  
+
+
+
+
+{\ttfamily \#include $<$Trama\+Map.\+h$>$}
+
+
+
+Inheritance diagram for Trama\+Map\+:
+% FIG 0
+
+
+Collaboration diagram for Trama\+Map\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTramaMap_a3ecc3660df228ea26f7d8b8a17572a6a}{Trama\+Map}} (int r)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classTramaMap}{Trama\+Map}. \end{DoxyCompactList}\item 
+\Hypertarget{classTramaMap_ad4e67d3a3d1e512939133e56244c62d4}\label{classTramaMap_ad4e67d3a3d1e512939133e56244c62d4} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Trama\+Map} ()
+\begin{DoxyCompactList}\small\item\em Destructor (virtual por herencia). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}{procesar}} (\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}carga, \mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}rotor) override
+\begin{DoxyCompactList}\small\item\em Implementación de la lógica de mapeo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classTramaBase}{Trama\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classTramaBase_a18ebfa4d2bfccd937d095d31fbb0aa95}{\texorpdfstring{$\sim$}{\string~}\+Trama\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Trama concreta que representa una instrucción de mapeo (ej. "{}\+M,5"{}). 
+
+Hereda de \doxylink{classTramaBase}{Trama\+Base} e implementa la lógica de rotación del rotor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTramaMap_a3ecc3660df228ea26f7d8b8a17572a6a}\label{classTramaMap_a3ecc3660df228ea26f7d8b8a17572a6a} 
+\index{TramaMap@{TramaMap}!TramaMap@{TramaMap}}
+\index{TramaMap@{TramaMap}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{TramaMap()}{TramaMap()}}
+{\footnotesize\ttfamily Trama\+Map\+::\+Trama\+Map (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Constructor de \doxylink{classTramaMap}{Trama\+Map}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & El número de pasos de rotación. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTramaMap_a2108fdc79edbd189744fdc3d287a687d}\label{classTramaMap_a2108fdc79edbd189744fdc3d287a687d} 
+\index{TramaMap@{TramaMap}!procesar@{procesar}}
+\index{procesar@{procesar}!TramaMap@{TramaMap}}
+\doxysubsubsection{\texorpdfstring{procesar()}{procesar()}}
+{\footnotesize\ttfamily void Trama\+Map\+::procesar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classListaDeCarga}{Lista\+De\+Carga}} \texorpdfstring{$\ast$}{*}}]{carga,  }\item[{\mbox{\hyperlink{classRotorDeMapeo}{Rotor\+De\+Mapeo}} \texorpdfstring{$\ast$}{*}}]{rotor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementación de la lógica de mapeo. 
+
+Llama al método \textquotesingle{}rotar\textquotesingle{} del \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo}. No necesita interactuar con la \doxylink{classListaDeCarga}{Lista\+De\+Carga}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carga} & Puntero a la \doxylink{classListaDeCarga}{Lista\+De\+Carga} (no se usa, pero es parte de la firma). \\
+\hline
+{\em rotor} & Puntero al \doxylink{classRotorDeMapeo}{Rotor\+De\+Mapeo} actual. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTramaBase_a7adf0eea6b0eb612f7eeabac637c50a9}{Trama\+Base}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Trama\+Map.\+h\item 
+Trama\+Map.\+cpp\end{DoxyCompactItemize}

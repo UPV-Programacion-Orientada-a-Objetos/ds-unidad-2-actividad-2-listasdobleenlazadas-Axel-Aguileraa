@@ -1,0 +1,20 @@
+# Nombre del Proyecto
+PROJECT_NAME           = "Decodificador PRT-7"
+
+# Dónde está el código (el . significa la carpeta actual)
+INPUT                  = .
+
+# Buscar en subcarpetas (buena práctica)
+RECURSIVE              = YES
+
+# Documentar todo (incluso si no tiene comentarios)
+EXTRACT_ALL            = YES
+
+# Documentar variables privadas
+EXTRACT_PRIVATE        = YES
+
+# Dónde guardar la documentación (creará una carpeta)
+OUTPUT_DIRECTORY       = doxygen_html
+
+# No generar PDFs (lo hace más rápido)
+GENERATE_LATEX         = NO

@@ -1,0 +1,4 @@
+/home/axel/Escritorio/ListasDoblementeEnlazadas/build/CMakeFiles/Decodificador.dir
+/home/axel/Escritorio/ListasDoblementeEnlazadas/build/CMakeFiles/doc.dir
+/home/axel/Escritorio/ListasDoblementeEnlazadas/build/CMakeFiles/edit_cache.dir
+/home/axel/Escritorio/ListasDoblementeEnlazadas/build/CMakeFiles/rebuild_cache.dir

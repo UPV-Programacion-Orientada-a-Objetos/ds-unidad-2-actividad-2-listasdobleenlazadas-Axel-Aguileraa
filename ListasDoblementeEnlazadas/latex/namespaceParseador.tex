@@ -1,0 +1,40 @@
+\doxysection{Parseador Namespace Reference}
+\hypertarget{namespaceParseador}{}\label{namespaceParseador}\index{Parseador@{Parseador}}
+
+
+Contiene funciones de utilidad estáticas para parsear cadenas del protocolo PRT-\/7.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTramaBase}{Trama\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceParseador_abb1caa2bb07777a84c8f144b1c04acda}{parsear\+Trama}} (char \texorpdfstring{$\ast$}{*}linea\+Cruda)
+\begin{DoxyCompactList}\small\item\em Parsea una línea de texto cruda y la convierte en un objeto Trama. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contiene funciones de utilidad estáticas para parsear cadenas del protocolo PRT-\/7. 
+
+No se puede instanciar, solo se usan sus métodos estáticos. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceParseador_abb1caa2bb07777a84c8f144b1c04acda}\label{namespaceParseador_abb1caa2bb07777a84c8f144b1c04acda} 
+\index{Parseador@{Parseador}!parsearTrama@{parsearTrama}}
+\index{parsearTrama@{parsearTrama}!Parseador@{Parseador}}
+\doxysubsubsection{\texorpdfstring{parsearTrama()}{parsearTrama()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTramaBase}{Trama\+Base}} \texorpdfstring{$\ast$}{*} Parseador\+::parsear\+Trama (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{linea\+Cruda }\end{DoxyParamCaption})}
+
+
+
+Parsea una línea de texto cruda y la convierte en un objeto Trama. 
+
+Toma una cadena (ej. "{}\+M,-\/3"{}) y usa lógica de parseo C-\/style (strtok, atoi) para instanciar el objeto Trama derivado correcto (ej. new \doxylink{classTramaMap}{Trama\+Map}(-\/3)).
+
+
+\begin{DoxyParams}{Parameters}
+{\em linea\+Cruda} & Un puntero a un buffer de char (C-\/string) que contiene la línea leída del serial. IMPORTANTE\+: Esta función MODIFICA la cadena (efecto de strtok). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un puntero Trama\+Base\texorpdfstring{$\ast$}{*} al nuevo objeto instanciado. El llamador es responsable de hacer \textquotesingle{}delete\textquotesingle{} a este puntero. Retorna nullptr si la trama está mal formada. 
+\end{DoxyReturn}
